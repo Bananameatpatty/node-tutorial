@@ -1,0 +1,2 @@
+This is sample output to file experimentation to check if eveyrthing is working as intended 	 this is to check the tab and 
+ this is to check the newline
