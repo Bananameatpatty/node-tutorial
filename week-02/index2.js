@@ -1,0 +1,15 @@
+const fs = require('fs')
+
+fs.readFile('./text/input.txt' , 'utf-8' , (err,data)=>{
+  if (err) console.log("Lots of errors buddy ");
+
+  fs.readFile(`./text/${data}.txt`, 'utf-8' , (err,data1)=>{
+    console.log(data1)
+    fs.writeFile('./text/output.txt', `${data1}\n${data}` , err => {
+      console.log("The new file has been written")
+    })
+  })
+})
+console.log("Will read file")
+console.log("Either file is getting read")
+console.log("Else file has been read")
